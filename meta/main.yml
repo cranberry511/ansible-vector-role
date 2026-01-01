@@ -1,0 +1,13 @@
+galaxy_info:
+  author: cranberry511
+  description: vector role
+  company: cranberry511
+
+  license: license MIT
+
+  min_ansible_version: 2.20
+
+
+  galaxy_tags: []
+
+dependencies: []
