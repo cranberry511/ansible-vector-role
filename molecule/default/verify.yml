@@ -1,0 +1,17 @@
+---
+# Purpose: assert that the instance really ended up in the expected state.
+# Molecule calls this playbook with `molecule verify`.
+- name: Verify
+  hosts: all
+  gather_facts: false # Quicker, if you do not need facts
+  vars:
+    vector_config_path: "/etc/vector/vector.yaml"
+  tasks:
+    - name: Assert something
+      ansible.builtin.assert:
+        that: true
+    - name: "vector config file '{{ vector_config_path }}'  retrieve information"
+      stat:
+        path: "{{ vector_config_path }}"
+      register: file_config
+
