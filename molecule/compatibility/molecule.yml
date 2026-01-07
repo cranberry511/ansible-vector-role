@@ -1,0 +1,10 @@
+---
+dependency:
+  name: galaxy
+  options:
+    requirements-file: requirements.yml
+platforms:
+  - name: molecule-debian
+    image: python:3.14
+  - name: molecule-oraclelinux
+    image: oraclelinux:10

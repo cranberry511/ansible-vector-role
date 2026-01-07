@@ -1,5 +1,7 @@
 galaxy_info:
   author: cranberry511
+  role_name: vector_role
+  namespace: cranberry511
   description: vector role
   company: cranberry511
 
